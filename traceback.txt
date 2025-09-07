@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 11, in script
+    define p = pause(14.0)
+  File "game/script.rpy", line 11, in <module>
+    define p = pause(14.0)
+NameError: name 'pause' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 11, in script
+    define p = pause(14.0)
+  File "C:\Users\Adam\Desktop\Game Engines\renpy-8.3.3-sdk\renpy\ast.py", line 2235, in execute
+    self.set()
+  File "C:\Users\Adam\Desktop\Game Engines\renpy-8.3.3-sdk\renpy\ast.py", line 2249, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\Adam\Desktop\Game Engines\renpy-8.3.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 11, in <module>
+    define p = pause(14.0)
+NameError: name 'pause' is not defined
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.3.24111502
+FairySentaiGame 1.0
+Sat Sep  6 18:54:16 2025
